@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uoa.assignment1.character.CharacterTests" time="0.016" tests="9" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uoa.assignment1.character.CharacterTests" time="0.02" tests="9" errors="0" skipped="0" failures="1">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/zulu-11-amd64/lib"/>
-    <property name="sun.java.command" value="/home/codio/workspace/Joshua_Shayo/target/surefire/surefirebooter3013583952557773290.jar /home/codio/workspace/Joshua_Shayo/target/surefire 2021-11-05T19-23-49_928-jvmRun1 surefire9643015978467300899tmp surefire_016854761022755524412tmp"/>
+    <property name="sun.java.command" value="/home/codio/workspace/Joshua_Shayo/target/surefire/surefirebooter11201632238898054625.jar /home/codio/workspace/Joshua_Shayo/target/surefire 2021-11-06T20-44-41_254-jvmRun1 surefire7675566341656069205tmp surefire_03086752710527380208tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/codio/workspace/Joshua_Shayo/target/test-classes:/home/codio/workspace/Joshua_Shayo/target/classes:/home/codio/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/codio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="jdk.vendor.version" value="Zulu11.41+23-CA"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/codio/workspace/Joshua_Shayo/target/surefire/surefirebooter3013583952557773290.jar"/>
+    <property name="surefire.real.class.path" value="/home/codio/workspace/Joshua_Shayo/target/surefire/surefirebooter11201632238898054625.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.8+10-LTS"/>
     <property name="user.name" value="codio"/>
@@ -59,16 +59,16 @@
     <property name="java.class.version" value="55.0"/>
   </properties>
   <testcase name="checkMonsterClassFailedfulAttack" classname="uoa.assignment1.character.CharacterTests" time="0"/>
-  <testcase name="checkIfMonsterDecidesRandomly" classname="uoa.assignment1.character.CharacterTests" time="0">
+  <testcase name="checkIfMonsterDecidesRandomly" classname="uoa.assignment1.character.CharacterTests" time="0.001">
     <failure message="&amp;#27;[47m&amp;#27;[30mMake sure the class Monster contains a method decideMove() as per T4.2 and all previous tasks have been completed.&amp;#27;[0mjava.lang.AssertionError: &amp;#27;[47m&amp;#27;[30mIs your method Monster.decideMove() really random Our test on 100k tries shows that these many decisions were generated for each category up:0 down:0 left:0 right:0 See task 1.5 instructions&amp;#27;[0m" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: &amp#27;[47m&amp#27;[30mMake sure the class Monster contains a method decideMove() as per T4.2 and all previous tasks have been completed.&amp#27;[0mjava.lang.AssertionError: &amp#27;[47m&amp#27;[30mIs your method Monster.decideMove() really random Our test on 100k tries shows that these many decisions were generated for each category up:0 down:0 left:0 right:0 See task 1.5 instructions&amp#27;[0m
 	at uoa.assignment1.character.CharacterTests.checkIfMonsterDecidesRandomly(CharacterTests.java:325)
 ]]></failure>
   </testcase>
   <testcase name="checkHealthFunctionality" classname="uoa.assignment1.character.CharacterTests" time="0"/>
   <testcase name="checkIfPlayerDefenceLooksRandom" classname="uoa.assignment1.character.CharacterTests" time="0.007"/>
-  <testcase name="checkIfMonsterDefenceLooksRandom" classname="uoa.assignment1.character.CharacterTests" time="0.007"/>
-  <testcase name="checkPlayerClassSuccesfulAttack" classname="uoa.assignment1.character.CharacterTests" time="0.001"/>
+  <testcase name="checkIfMonsterDefenceLooksRandom" classname="uoa.assignment1.character.CharacterTests" time="0.008"/>
+  <testcase name="checkPlayerClassSuccesfulAttack" classname="uoa.assignment1.character.CharacterTests" time="0"/>
   <testcase name="checkMonsterClassSuccesfulAttack" classname="uoa.assignment1.character.CharacterTests" time="0"/>
-  <testcase name="checkSayName" classname="uoa.assignment1.character.CharacterTests" time="0.001"/>
+  <testcase name="checkSayName" classname="uoa.assignment1.character.CharacterTests" time="0"/>
   <testcase name="checkPlayerClassFailedfulAttack" classname="uoa.assignment1.character.CharacterTests" time="0"/>
 </testsuite>
