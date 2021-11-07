@@ -30,8 +30,23 @@ public class Monster extends GameCharacter {
 
 	
 	public String decideMove () {
-		
-		return "move";
+        String move = "";
+        switch(rand.nextInt(4)){
+            case 0:
+                move = "up";
+                break;
+            case 1:
+                move = "down";
+                break;
+            case 2:
+                move = "left";
+                break;
+            case 3:
+                move = "right";
+                break;
+                
+        }
+		return move;
 	}
 
 }

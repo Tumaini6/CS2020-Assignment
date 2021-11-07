@@ -14,7 +14,8 @@ public class RunGame {
             
             System.out.println("Round " + roundCounter++);
             Scanner user_intput = new Scanner(System.in);
-            System.out.println("Player is moving " + user_intput.nextLine());
+            String input = user_intput.nextLine();
+            game.nextRound(input);
             
             
             
