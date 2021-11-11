@@ -19,21 +19,35 @@ public class Game {
     }
     
     public boolean nextRound (String input) {
-        map = getMap();
         gamelogic.moveCharacter(input, map, map.characters[0]);
         System.out.println("Player is moving " + input);
         
-        
+        int monstersAlive = 0;
         for(int i=1; i<4; i++){
             Monster monster = (Monster) map.characters[i];
             if(monster.getHealth() > 0){
                 String move = monster.decideMove();
                 gamelogic.moveCharacter(move, map, monster);
                 System.out.println("Monster" + i + " is moving " + move);
+                monstersAlive +=1;
             }
             
         }
-        return true;
+        
+        for(int i= 0; i < map.characters.length; i++){
+                System.out.println("Health " + map.characters[i].sayName() + ":  " + map.characters[i].getHealth());
+            }
+        System.out.println();
+        if(monstersAlive == 0){
+            System.out.println("YOU HAVE WON!");
+            return true;
+        }
+        if(map.characters[0].getHealth() <= 0){
+            System.out.println("YOU HAVE DIED!");
+            return true;
+            }
+        return false;
+        
     }
    
 }

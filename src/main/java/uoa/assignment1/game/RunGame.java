@@ -11,14 +11,13 @@ public class RunGame {
         int roundCounter = 1;
         while (!gameOver) {
 			//complete the code
-            
-            System.out.println("Round " + roundCounter++);
+            System.out.println("Round " + roundCounter++ + "\n");
             Scanner user_intput = new Scanner(System.in);
             String input = user_intput.nextLine();
-            game.nextRound(input);
             
+            gameOver = game.nextRound(input);
             
-            
+            game.getMap().printLayout();
             
             
 		}

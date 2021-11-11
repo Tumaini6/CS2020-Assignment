@@ -15,7 +15,10 @@ public class Monster extends GameCharacter {
 	public void hurtCharacter(GameCharacter character) {
 		if(!character.successfulDefense()) {
             character.setHealth(character.getHealth() - 20);
+            System.out.println("!!HIT!! " + this.sayName() + " successfully attacked Player");
+            return;
         }
+        System.out.println("!!MISS!! Player successfully defended attack from " + this.sayName());
 	}
 
 
