@@ -5,10 +5,13 @@ import uoa.assignment1.character.Monster;
 import uoa.assignment1.character.Player;
 
 public class Map {
-
+// Define the map layout
 public String [][] layout;
+    
+//Define the game character list
 public GameCharacter[] characters = new GameCharacter[4];
  
+  //Constructor method for map
   Map (int height, int width) {
      layout = new String[height][width];
      initialiseArray();
@@ -46,6 +49,7 @@ public GameCharacter[] characters = new GameCharacter[4];
 
   }
  
+  //Displays the map in an appropriate format
   public void printLayout() {
     for (String [] row : layout) {
         System.out.print("\n");
@@ -56,6 +60,7 @@ public GameCharacter[] characters = new GameCharacter[4];
       System.out.print("\n");
    }
 
+  //Populates the map with . 
   private void  initialiseArray(){
       for (int row = 0; row < layout.length; row++) {
           for (int col = 0; col < layout[row].length; col++) {

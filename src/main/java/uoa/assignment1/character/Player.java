@@ -4,15 +4,16 @@ import java.util.Random;
 
 public class Player extends GameCharacter{
     
+    // Defines a random object 
     Random rand = new Random();
 
+    // Player constructor class
 	public Player(String name) {
 		super(name);
 	}
 
-	
-	public
-	void hurtCharacter(GameCharacter character) {
+	// If monster is hit uses successfulDefense to decide if player looses 50 from its health
+	public void hurtCharacter(GameCharacter character) {
 		if(!character.successfulDefense()) {
             character.setHealth(character.getHealth() - 50);
             System.out.println("!!HIT!! Player successfully attacked " + character.sayName());
@@ -21,9 +22,8 @@ public class Player extends GameCharacter{
         System.out.println("!!MISS!! " + character.sayName() + " successfully defended attack from Player");
 	}
 
-	
-	public
-	boolean successfulDefense() {
+	// Decides if monster has a successful defense with a 30/70 chance
+	public boolean successfulDefense() {
         if(rand.nextInt(10) <= 7){
             return false;
         }

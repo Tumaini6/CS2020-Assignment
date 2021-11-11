@@ -4,9 +4,10 @@ import java.util.Random;
 
 public class Monster extends GameCharacter {
     
+    // Defines a random object 
     Random rand = new Random();
 
-    // Monster contructor
+    // Monster contructor class
 	public  Monster(String name) {
 		super(name);
 	}
@@ -31,7 +32,7 @@ public class Monster extends GameCharacter {
 	}
 
 
-	
+	// Randomly chooses a direction for the monster to move
 	public String decideMove () {
         String move = "";
         switch(rand.nextInt(4)){
